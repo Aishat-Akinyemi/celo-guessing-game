@@ -1,0 +1,16 @@
+events:
+0: {address: '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1', blockNumber: 11422491, transactionHash: '0x2e78ea17a8ed7f7184774c6d9288b6b8a12b34c35e6c05eb8bdef6e374bea84e', transactionIndex: 1, blockHash: '0x87e6ca24aa2e94461c3448b79a2b3f76f6ceebfbaf069741b685a174f6fdce65', …}
+1: {address: '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1', blockNumber: 11422491, transactionHash: '0x2e78ea17a8ed7f7184774c6d9288b6b8a12b34c35e6c05eb8bdef6e374bea84e', transactionIndex: 1, blockHash: '0x87e6ca24aa2e94461c3448b79a2b3f76f6ceebfbaf069741b685a174f6fdce65', …}
+PlayedRound:
+address: "0x769Ce2Cfd1274b977EFEF33233A55B8C6F1CD302"
+blockHash: "0x87e6ca24aa2e94461c3448b79a2b3f76f6ceebfbaf069741b685a174f6fdce65"
+blockNumber: 11422491
+event: "PlayedRound"
+id: "log_b145734a"
+logIndex: 4
+raw: {data: '0x000000000000000000000000000000000000000000000000…0000000000000000000000000000000000000000000000000', topics: Array(1)}
+removed: false
+returnValues: Result {0: 'this', 1: false, 2: '500000000000000000', randomWord: 'this', won: false, amountWon: '500000000000000000'}
+signature: "0xa0dbf9c2e98553b6a6df69a799ba751a6bcd1c2583ad2a7d5f2f6fff4b0b55d2"
+transactionHash: "0x2e78ea17a8ed7f7184774c6d9288b6b8a12b34c35e6c05eb8bdef6e374bea84e"
+transactionIndex: 1
