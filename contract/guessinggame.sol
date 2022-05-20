@@ -37,7 +37,7 @@ contract GuessingGame {
         uint256 amountWon
     );
 
-
+    // start a new game
     function startGameWithCelo(string[] memory _words, uint8 _round_no, uint256 amount) public {
         require(amount>0, "amount must be greater than 0");     
         uint256 _unitReward = SafeMath.div(amount, _round_no); 
@@ -51,10 +51,12 @@ contract GuessingGame {
         
     }
 
+    // get list of all games created by current user
     function getPlayerLastGame() public view returns(Game[] memory g){
         return games[msg.sender];
     }
 
+    // play a game using @_word
     function playGame(string memory _word) external payable {
         Game[] storage g = games[msg.sender]; 
         Game storage currentGame = g[g.length - 1];
@@ -91,13 +93,13 @@ contract GuessingGame {
     }
 
     
-
+    // helper function to return a random number 
     function createRandom(uint number) public view returns(uint){
         return uint(blockhash(block.number-1)) % number;
     }
 
     //compare string 
-    function hashCompareWithLengthCheck(string memory a, string memory b) internal returns (bool) {
+    function hashCompareWithLengthCheck(string memory a, string memory b) internal pure returns (bool) {
         if(bytes(a).length != bytes(b).length) {
             return false;
         } else {
