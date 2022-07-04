@@ -156,7 +156,7 @@ notificationOff()
 document
   .querySelector("#newGameBtn")
   .addEventListener("click", async () => {
-    let words = (document.getElementById("words").value).split(",");
+    let words = (document.getElementById("words").value).split(",").filter(word => word); // adds only non-nulll values to the word list
     const params = [
         words,
         document.getElementById("roundCount").value.toString(),
